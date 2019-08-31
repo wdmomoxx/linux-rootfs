@@ -6,8 +6,8 @@ CHROOT_DIR=/opt/debian
 # will be mounted to /mnt folder in Debian
 # Uncommented next line if you need to mount a folder inside debian
 # EXT_DIR=/tmp/share/sda1
-#touch /opt/etc/chroot-services.list
-CHROOT_SERVICES_LIST=/opt/etc/chroot-services.list
+#touch /opt/chroot-services.list
+CHROOT_SERVICES_LIST=/opt/chroot-services.list
 if [ ! -e "$CHROOT_SERVICES_LIST" ]; then
   echo "Please, define Debian services to start in $CHROOT_SERVICES_LIST first!"
   echo "One service per line. Hint: this is a script names from Debian's /etc/init.d/"
